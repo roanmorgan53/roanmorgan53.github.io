@@ -1,3 +1,38 @@
-#header {
+body{
+    font-family: Tahoma, sans-serif;
     margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
+    max-width: 600px;
+    min-width: 300px;
+    color: rgb(234, 231, 231);
+}
+
+#header {
+    padding: 20px;
+    text-align: center;
+}
+
+#roanPhoto {
+    width: 35%;
+    float: left;
+    margin: 0 10px 10px 0;
+    margin-bottom: 10px;
+}
+
+#bioText {
+    text-align: justify;
+}
+
+#bio{
+    width: 100%;
+}
+
+#education {
+    width: 100%;
+}
+
+
+.inline {
+    display: inline-block;
 }
