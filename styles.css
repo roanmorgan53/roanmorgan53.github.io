@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: Tahoma, sans-serif;
     margin: 0 auto;
     padding: 10px;
     background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
-    max-width: 600px;
+    max-width: 800px;
     min-width: 300px;
     color: rgb(234, 231, 231);
 }
@@ -13,26 +17,63 @@ body{
     text-align: center;
 }
 
-#roanPhoto {
-    width: 35%;
-    float: left;
-    margin: 0 10px 10px 0;
-    margin-bottom: 10px;
-}
-
-#bioText {
-    text-align: justify;
-}
-
-#bio{
-    width: 100%;
-}
-
 #education {
     width: 100%;
 }
 
+#content h2 {
+    margin: 0;
+}
+
+#bio img {
+    max-width: 20%;
+    min-width: 100px;
+    height:100%;
+    height: auto;
+    border-radius: 3px;;
+    float: left;
+    padding-right: 5px;
+}
+
+#bio {
+    padding: 5px;
+    text-align: left;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#bio p {
+    margin: 0;
+}
 
 .inline {
     display: inline-block;
+}
+
+hr {
+    width: 100%;
+    border: 2px solid rgb(234, 231, 231);
+    
+}
+
+#education p {
+    margin: 0;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#education h4 {
+    margin: 0px 0;
+    padding: 2px 0;
+    padding-top: 10px;
+    border-bottom: 2px solid rgb(234, 231, 231);
+}
+
+.cos {
+    padding-top: 0px;
+}
+
+.lightdark{
+    background-color: rgb(46, 46, 65);
 }
