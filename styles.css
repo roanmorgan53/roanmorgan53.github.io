@@ -4,11 +4,11 @@
 
 body{
     font-family: Tahoma, sans-serif;
-    margin: 0 auto;
+    margin: 0 auto 5em auto;
     padding: 10px;
     background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
     max-width: 800px;
-    min-width: 300px;
+    min-width: 600px;
     color: rgb(234, 231, 231);
 }
 
@@ -56,18 +56,32 @@ hr {
     
 }
 
-#education p {
+#education p, #awards p {
     margin: 0;
     padding: 1px;
     display: flex;
     justify-content: space-between;
 }
 
-#education h4 {
+#education h4, #awards h4 {
     margin: 0px 0;
     padding: 2px 0;
     padding-top: 10px;
     border-bottom: 2px solid rgb(234, 231, 231);
+    width: 100%;
+    min-width: 600px;
+}
+
+#awards {
+    margin: 20px 0;
+}
+
+#awards h2 {
+    padding-bottom: 15px;
+}
+
+#work {
+    display: none;
 }
 
 .cos {
