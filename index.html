@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A portfolio website all about Roan Morgan">
-    <title>Roan Morgan's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
 
-  <body>
-    <div id="header">
-      <h1>Roan Morgan</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A portfolio website all about Roan Morgan">
+  <title>Roan Morgan's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <!--Link to Noto Serif-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <h1 class="main-title">Roan Morgan</h1>
+    <p class="main-title">
+      <strong><em>Computer Science Student</em></strong>
+    </p>
+  </div>
+
+  <hr />
+  <div id="content">
+    <h2><span class="section-title">Biography</span></h2>
+    <div id="bio">
+      <img id="roanPhoto" class="inline" src="images/roan.jpg" alt="Roan Morgan" />
       <p>
-        <strong><em>Computer Science Student</em></strong>
+        Hi, my name is Roan Morgan. Since a very young age, I have always been
+        interested in all things technology. Even more importantly, how
+        technology influences our world. I first began on this tech focused
+        journey in middle school. I had taken a class there called "Exploring
+        Technology". This class consisted of basic html/css, arduino, and lego
+        robotics. This sparked an ever-growing curiosity about tech that
+        hasn't left me since. Now, I am currently a community college student
+        in the central valley of California studying computer science. I hope
+        to enter the field of tech and work on a project that will influence
+        the physical world around us. May that be cars, trains, or planes who
+        is to know.
       </p>
     </div>
 
-    <hr />
-    <div id="content">
-      <h2>Biography</h2>
-      <div id="bio">
-        <img
-          id="roanPhoto"
-          class="inline"
-          src="images/roan.jpg"
-          alt="Roan Morgan"
-        />
+    <!--yo-->
+
+    <div id="education" class="inline">
+      <h2><span class="section-title">Education</span></h2>
+      <div class="cos">
+        <h4>
+          College of the Sequoias
+          <em>/ CSU General Education / CSCI-ADT / 2024</em>
+        </h4>
+        <p class="lightdark">
+          Giant Astronomy Students<span>Secretary</span>
+        </p>
+        <p>MESA Program<span>Member</span></p>
+        <p class="lightdark">Friday Night Lab<span>Member</span></p>
+        <p>Chess Club<span>Member</span></p>
+        <p class="lightdark">Physics<span>Calculus Based</span></p>
+        <p>Calculus<span>Vector and 3D</span></p>
+        <p class="lightdark">Linear algebra<span></span></p>
         <p>
-          Hi, my name is Roan Morgan. Since a very young age, I have always been
-          interested in all things technology. Even more importantly, how
-          technology influences our world. I first began on this tech focused
-          journey in middle school. I had taken a class there called "Exploring
-          Technology". This class consisted of basic html/css, arduino, and lego
-          robotics. This sparked an ever-growing curiosity about tech that
-          hasn't left me since. Now, I am currently a community college student
-          in the central valley of California studying computer science. I hope
-          to enter the field of tech and work on a project that will influence
-          the physical world around us. May that be cars, trains, or planes who
-          is to know.
+          Computer Science<span>Programming, Architecture, Discrete Math, C++</span>
         </p>
       </div>
-
-      <!--yo-->
-
-      <div id="education" class="inline">
-        <h2>Education</h2>
-        <div class="cos">
-          <h4>
-            College of the Sequoias
-            <em>/ CSU General Education / CSCI-ADT / 2024</em>
-          </h4>
-          <p class="lightdark">
-            Giant Astronomy Students<span>Secretary</span>
-          </p>
-          <p>MESA Program<span>Member</span></p>
-          <p class="lightdark">Friday Night Lab<span>Member</span></p>
-          <p>Chess Club<span>Member</span></p>
-          <p class="lightdark">Physics<span>Calculus Based</span></p>
-          <p>Calculus<span>Vector and 3D</span></p>
-          <p class="lightdark">Linear algebra<span></span></p>
-          <p>
-            Computer Science<span>Programming, Architecture, Discrete Math, C++</span>
-          </p>
-        </div>
-        <div class="redwood">
-          <h4>Redwood High School <em>/ Diploma / 2022</em></h4>
-          <p class="lightdark">Football<span></span>4 Years</p>
-          <p>Golf<span>1 Year</span></p>
-          <p class="lightdark">
-            California Scholarship Federation<span>4 Years</span>
-          </p>
-        </div>
-      </div>
-
-
-      <div id="awards">
-        <h2>Awards</h2>
-        <p class="lightdark">College of the Sequoias President's List<span>2 Semesters</span></p>
-        <p>College of the Sequoias Dean's List<span>1 Semester</span></p>
-        <p class="lightdark">Redwood Highschool Academic Excellence<span>8 Semesters</span></p>
-        <p>Redwood Highschool Scholar Athlete<span></span></p>
-        <p class="lightdark">California Scholarship Federation Lifetime Member<span></span></p>
-        <p>California State Seal of Biliteracy<span>Spanish</span></p>
-
-      </div>
-
-      <div id="work">
-        <h2>Work</h2>
+      <div class="redwood">
+        <h4>Redwood High School <em>/ Diploma / 2022</em></h4>
+        <p class="lightdark">Football<span></span>4 Years</p>
+        <p>Golf<span>1 Year</span></p>
+        <p class="lightdark">
+          California Scholarship Federation<span>4 Years</span>
+        </p>
       </div>
     </div>
 
-    <div id="footer">
-      <p>
-        <a href="https://www.linkedin.com/in/roan-morgan-b78582225/" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn" />
-        </a>
+
+    <div id="awards">
+      <h2><span class="section-title">Awards</span></h2>
+      <p class="lightdark">College of the Sequoias President's List<span>2 Semesters</span></p>
+      <p>College of the Sequoias Dean's List<span>1 Semester</span></p>
+      <p class="lightdark">Redwood Highschool Academic Excellence<span>8 Semesters</span></p>
+      <p>Redwood Highschool Scholar Athlete<span></span></p>
+      <p class="lightdark">California Scholarship Federation Lifetime Member<span></span></p>
+      <p>California State Seal of Biliteracy<span>Spanish</span></p>
+
     </div>
 
-  </body>
+    <div id="work">
+      <h2><span class="section-title">Work</span></h2>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>
+      <a href="https://www.linkedin.com/in/roan-morgan-b78582225/" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+  </div>
+
+</body>
+
 </html>
