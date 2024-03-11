@@ -1,124 +1,150 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Tahoma, sans-serif;
-    margin: 0 auto 5em auto;
-    padding: 10px;
-    background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
-    max-width: 800px;
-    min-width: 600px;
-    color: rgb(234, 231, 231);
+  font-family: Tahoma, sans-serif;
+  margin: 0 auto 5em auto;
+  padding: 10px;
+  background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
+  max-width: 800px;
+  min-width: 600px;
+  color: rgb(234, 231, 231);
 }
 
 #header {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 #education {
-    width: 100%;
+  width: 100%;
 }
 
 #content h2 {
-    margin: 0;
+  margin: 0;
 }
 
 #bio img {
-    max-width: 20%;
-    min-width: 100px;
-    height: 100%;
-    height: auto;
-    border-radius: 3px;
-    ;
-    float: left;
-    padding-right: 5px;
+  max-width: 20%;
+  min-width: 100px;
+  height: 100%;
+  height: auto;
+  border-radius: 3px;
+  float: left;
+  padding-right: 5px;
 }
 
 #bio {
-    padding: 5px;
-    text-align: left;
-    object-fit: cover;
-    overflow: hidden;
+  padding: 5px;
+  text-align: left;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 #bio p {
-    margin: 0;
+  margin: 0;
 }
 
 .inline {
-    display: inline-block;
+  display: inline-block;
 }
 
 hr {
-    width: 100%;
-    border: 2px solid rgb(234, 231, 231);
-
+  width: 100%;
+  border: 2px solid rgb(234, 231, 231);
 }
 
 #education p,
-#awards p {
-    margin: 0;
-    padding: 1px;
-    display: flex;
-    justify-content: space-between;
+#awards p,
+#skills p {
+  margin: 0;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #education h4,
 #awards h4 {
-    margin: 0px 0;
-    padding: 2px 0;
-    padding-top: 10px;
-    border-bottom: 2px solid rgb(234, 231, 231);
-    width: 100%;
-    min-width: 600px;
+  margin: 0px 0;
+  padding: 2px 0;
+  padding-top: 10px;
+  border-bottom: 2px solid rgb(234, 231, 231);
+  width: 100%;
+  min-width: 600px;
 }
 
 #awards {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
-#awards h2 {
-    padding-bottom: 15px;
+#awards h2,
+#skills h2 {
+  padding-bottom: 15px;
 }
 
 #work {
-    display: none;
+  display: none;
 }
 
 .cos {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .lightdark {
-    background-color: rgb(46, 46, 65);
+  background-color: rgb(46, 46, 65);
 }
 
 #footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    bottom: 0;
-    color: rgb(234, 231, 231);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  color: rgb(234, 231, 231);
 }
 
 #footer img {
-    width: 50px;
-    margin: 0;  
-    color: white;
+  width: 50px;
+  margin: 0;
+  color: white;
 }
 
 a {
- text-decoration: none;   
+  text-decoration: none;
 }
 
 .main-title {
-    font-family: "Noto Serif", sans-serif;
+  font-family: "Noto Serif", sans-serif;
+  margin-bottom: 0;
 }
 
 .section-title {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.description {
+  font-family: "Noto Serif", sans-serif;
+  padding-left: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.description ul {
+  margin: 0;
+}
+
+h4 {
     font-family: "Noto Serif", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-style: italic;
+}
+
+.nostyle {
+  text-decoration: none;
+  color: white;
 }
