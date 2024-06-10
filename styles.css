@@ -59,7 +59,8 @@ hr {
 #education p,
 #awards p,
 #skills p,
-#projects p{
+#projects p,
+#experiences p{
   margin: 0;
   padding: 1px;
   padding-left: 5px;
@@ -69,7 +70,8 @@ hr {
 }
 
 #education h4,
-#awards h4 {
+#awards h4,
+#experiences h4 {
   margin: 0px 0;
   padding: 2px 0;
   padding-top: 10px;
@@ -86,6 +88,10 @@ hr {
 #skills h2,
 #projects h2 {
   padding-bottom: 15px;
+}
+
+#experiences h2 {
+  padding-top: 15px;
 }
 
 #work {
@@ -158,4 +164,8 @@ h4 {
   background-color: rgba(249, 249, 249, 0.193);
   border-radius: 4px;
   padding: 2px
+}
+
+.hide {
+  display: none;
 }
