@@ -180,3 +180,14 @@ h4 {
   padding-left: 15px;
   display: inline-block;
 }
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images img{
+  justify-content: center;
+  max-height: 15vh
+}
