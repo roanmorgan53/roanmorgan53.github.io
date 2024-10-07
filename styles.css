@@ -26,13 +26,12 @@ body {
 }
 
 #bio img {
-  max-width: 20%;
-  min-width: 100px;
+  width: 20%;
   height: 100%;
-  height: auto;
   border-radius: 3px;
   float: left;
   padding-right: 5px;
+  display: block;
 }
 
 #bio {
@@ -44,6 +43,7 @@ body {
 
 #bio p {
   margin: 0;
+  font-size: 1.2em;
 }
 
 .inline {
@@ -96,9 +96,6 @@ hr {
   padding-top: 15px;
 }
 
-#experiences div {
-  border: 2px solid red;
-}
 
 #photo-group {
   display: grid;
