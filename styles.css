@@ -101,14 +101,20 @@ hr {
 }
 
 #photo-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #photo-group img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 3px;
-  padding-right: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px;
 }
 
 .bottom-spacing {
