@@ -96,6 +96,21 @@ hr {
   padding-top: 15px;
 }
 
+#experiences div {
+  border: 2px solid red;
+}
+
+#photo-group {
+  display: flex;
+}
+
+#photo-group img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  padding-right: 5px;
+}
+
 .bottom-spacing {
   margin-bottom: 100px;
 }
