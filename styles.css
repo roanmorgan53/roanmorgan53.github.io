@@ -3,18 +3,25 @@
 }
 
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: "Noto Serif", serif;
   margin: 0 auto 5em auto;
-  padding: 10px;
+  padding: 20px;
   background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
-  max-width: 800px;
-  min-width: 600px;
+  max-width: 900px;
+  min-width: auto;
   color: rgb(234, 231, 231);
+  line-height: 1.6;
 }
 
 #header {
-  padding: 20px;
+  padding: 20px 20px;
   text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 #education {
@@ -23,27 +30,51 @@ body {
 
 #content h2 {
   margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+#content h2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(234, 231, 231);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#content h2:hover::after {
+  transform: scaleX(1);
 }
 
 #bio img {
-  width: 20%;
-  height: 100%;
-  border-radius: 3px;
+  width: 25%;
+  height: auto;
+  border-radius: 8px;
   float: left;
-  padding-right: 5px;
-  display: block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#bio img:hover {
+  transform: scale(1.02);
 }
 
 #bio {
-  padding: 5px;
+  padding: 20px 0;
   text-align: left;
-  object-fit: cover;
   overflow: hidden;
 }
 
 #bio p {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  text-align: justify;
 }
 
 .inline {
@@ -53,158 +84,195 @@ body {
 hr {
   width: 100%;
   min-width: 580px;
-  border: 2px solid rgb(234, 231, 231);
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgb(234, 231, 231), transparent);
+  margin: 15px 0;
 }
 
 #education p,
 #awards p,
 #skills p,
 #projects p,
-#experiences p{
-  margin: 0;
-  padding: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
+#experiences p {
+  margin: 8px 0;
+  padding: 8px 15px;
   display: flex;
   justify-content: space-between;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 #education h4,
 #awards h4,
 #experiences h4 {
-  margin: 0px 0;
-  padding: 2px 0;
-  padding-top: 10px;
-  border-bottom: 2px solid rgb(234, 231, 231);
+  margin: 20px 0 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(234, 231, 231, 0.3);
   width: 100%;
   min-width: 580px;
-}
-
-#awards {
-  margin-top: 0px;
-  margin-bottom: 20px
-}
-
-#awards h2,
-#skills h2,
-#projects h2 {
-  padding-bottom: 15px;
-  padding-top: 15px
-}
-
-#experiences h2 {
-  padding-top: 15px;
-}
-
-
-#photo-group {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px;
-  padding: 10px;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-#photo-group img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 2px;
-}
-
-.bottom-spacing {
-  margin-bottom: 100px;
-}
-
-#work {
-  display: none;
-}
-
-.cos {
-  padding-top: 0px;
-}
-
-.lightdark {
-  background-color: rgb(46, 46, 65);
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-  bottom: 0;
-  color: rgb(234, 231, 231);
-}
-
-#footer img {
-  width: 50px;
-  margin: 0;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-
-.main-title {
-  font-family: "Noto Serif", sans-serif;
-  margin-bottom: 0;
+  font-size: 1.2em;
 }
 
 .section-title {
   text-transform: uppercase;
   font-family: "Noto Serif", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
-.description {
-  font-family: Tahoma, sans-serif;
-  padding-left: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+#photo-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.description ul {
-  margin: 0;
+#photo-group img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
 }
 
-h4 {
-    font-family: "Noto Serif", sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-style: italic;
+#photo-group img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lightdark {
+  background-color: rgba(46, 46, 65, 0.5);
+}
+
+.lightdark:hover {
+  background-color: rgba(46, 46, 65, 0.8);
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 30px 10px;
+}
+
+#footer img {
+  width: 40px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#footer img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
 }
 
 .nostyle {
   text-decoration: none;
-  color: white;
+  color: rgb(234, 231, 231);
+  transition: color 0.3s ease;
 }
 
-.highlight {
-  background-color: rgba(249, 249, 249, 0.193);
-  border-radius: 4px;
-  padding: 2px
+.nostyle:hover {
+  color: #fff;
 }
 
-.hide {
-  display: none;
-}
-
-.indent{
-  padding-left: 15px;
+.indent {
+  padding-left: 25px;
   display: inline-block;
 }
 
-.images{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+::selection {
+  background: rgba(234, 231, 231, 0.2);
 }
 
-.images img{
-  justify-content: center;
-  max-height: 15vh
+.main-title {
+  font-size: 2em;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+p.main-title {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+h4 em {
+  color: rgba(234, 231, 231, 0.7);
+  font-weight: normal;
+}
+
+span {
+  color: rgba(234, 231, 231, 0.7);
+}
+
+/* Add media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  #bio img {
+    width: 100%;
+    float: none;
+    margin: 0 0 20px 0;
+  }
+
+  #education h4,
+  #awards h4,
+  #experiences h4 {
+    min-width: auto;
+    font-size: 1.1em;
+  }
+
+  hr {
+    min-width: auto;
+  }
+
+  #photo-group {
+    grid-template-columns: 1fr;
+  }
+
+  #photo-group img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #education p,
+  #awards p,
+  #skills p,
+  #projects p,
+  #experiences p {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #education p span,
+  #awards p span,
+  #skills p span,
+  #projects p span,
+  #experiences p span {
+    display: block;
+    padding-left: 15px;
+  }
+
+  .main-title {
+    font-size: 1.8em;
+  }
+
+  p.main-title {
+    font-size: 1.1em;
+  }
+
+  .indent {
+    padding-left: 15px;
+  }
+}
+
+/* Add a medium breakpoint for tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #photo-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
