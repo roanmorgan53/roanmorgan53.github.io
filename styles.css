@@ -1,278 +1,83 @@
 * {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Serif", serif;
-  margin: 0 auto 5em auto;
-  padding: 20px;
-  background: linear-gradient(rgb(27, 27, 42) 90%, rgb(9, 9, 22));
-  max-width: 900px;
-  min-width: auto;
-  color: rgb(234, 231, 231);
-  line-height: 1.6;
-}
-
-#header {
-  padding: 20px 20px;
-  text-align: center;
-  animation: fadeIn 0.8s ease-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-#education {
-  width: 100%;
-}
-
-#content h2 {
   margin: 0;
-  position: relative;
-  display: inline-block;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-#content h2::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: rgb(234, 231, 231);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+ul {
+  padding-left: 1em
 }
 
-#content h2:hover::after {
-  transform: scaleX(1);
+marquee {
+  display: block;
+  color: green;
+  background-color: black;
+  font-weight: 1000; 
+  margin: 0 2em 0 2em;
+  box-shadow: 1px 1px 2px black; 
 }
 
-#bio img {
-  width: 25%;
-  height: auto;
-  border-radius: 8px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#info-wrapper {
+  display: block;
+  /* width: 75%; */
+  padding: 10px; 
+  background-color: rgb(130, 159, 238);
+  margin: 0 2em 0 auto;
+  box-shadow: 1px 1px 2px;
 }
 
-#bio img:hover {
-  transform: scale(1.02);
-}
-
-#bio {
-  padding: 20px 0;
-  text-align: left;
-  overflow: hidden;
-}
-
-#bio p {
-  margin: 0;
-  font-size: 1.1em;
-  text-align: justify;
-}
-
-.inline {
-  display: inline-block;
-}
-
-hr {
-  width: 100%;
-  min-width: 580px;
-  border: none;
-  height: 1px;
-  background: linear-gradient(to right, transparent, rgb(234, 231, 231), transparent);
-  margin: 15px 0;
-}
-
-#education p,
-#awards p,
-#skills p,
-#projects p,
-#experiences p {
-  margin: 8px 0;
-  padding: 8px 15px;
+.split {
   display: flex;
   justify-content: space-between;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
 }
 
-#education h4,
-#awards h4,
-#experiences h4 {
-  margin: 20px 0 10px 0;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(234, 231, 231, 0.3);
-  width: 100%;
-  min-width: 580px;
-  font-size: 1.2em;
+h1 {
 }
 
-.section-title {
-  text-transform: uppercase;
-  font-family: "Noto Serif", sans-serif;
-  letter-spacing: 2px;
+.about {
+  padding: 5px;
+  background-color: linear-gradient(90deg, blue, 10%, red);
+  margin: 0 0 10px 0;
+  box-shadow: 0px 0px 100px;
+}
+
+.about h1 {
+  font-family: sans-serif; 
   font-weight: 600;
 }
 
-#photo-group {
+.about span {
+  font-family: sans-serif;
+} 
+
+.float-parent {
+  /* border: 2px solid black; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px 0;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: 25% 75%;
+  margin-left: 2em;
 }
 
-#photo-group img {
+.float-child-left { 
+  /* height: 100%; */
+  height: 100%;
+  grid-row: 1;
+}
+
+.float-child-right {
+  height: 100%;
+  grid-row: 1;
+}
+
+.sidebar {
+  background-color: rgb(0, 0, 0);
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: block;
+  height: 100%;
+  color: white
+  /* border: 2px solid red */
 }
 
-#photo-group img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.lightdark {
-  background-color: rgba(46, 46, 65, 0.5);
-}
-
-.lightdark:hover {
-  background-color: rgba(46, 46, 65, 0.8);
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  padding: 30px 10px;
-}
-
-#footer img {
-  width: 40px;
-  opacity: 0.8;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#footer img:hover {
-  opacity: 1;
-  transform: translateY(-3px);
-}
-
-.nostyle {
-  text-decoration: none;
-  color: rgb(234, 231, 231);
-  transition: color 0.3s ease;
-}
-
-.nostyle:hover {
-  color: #fff;
-}
-
-.indent {
-  padding-left: 25px;
-  display: inline-block;
-}
-
-::selection {
-  background: rgba(234, 231, 231, 0.2);
-}
-
-.main-title {
-  font-size: 2em;
-  margin-bottom: 8px;
-  font-weight: 700;
-}
-
-p.main-title {
-  font-size: 1.2em;
-  margin-top: 5px;
-}
-
-h4 em {
-  color: rgba(234, 231, 231, 0.7);
-  font-weight: normal;
-}
-
-span {
-  color: rgba(234, 231, 231, 0.7);
-}
-
-/* Add media queries for mobile responsiveness */
-@media screen and (max-width: 768px) {
-  #bio img {
-    width: 100%;
-    float: none;
-    margin: 0 0 20px 0;
-  }
-
-  #education h4,
-  #awards h4,
-  #experiences h4 {
-    min-width: auto;
-    font-size: 1.1em;
-  }
-
-  hr {
-    min-width: auto;
-  }
-
-  #photo-group {
-    grid-template-columns: 1fr;
-  }
-
-  #photo-group img {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #education p,
-  #awards p,
-  #skills p,
-  #projects p,
-  #experiences p {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  #education p span,
-  #awards p span,
-  #skills p span,
-  #projects p span,
-  #experiences p span {
-    display: block;
-    padding-left: 15px;
-  }
-
-  .main-title {
-    font-size: 1.8em;
-  }
-
-  p.main-title {
-    font-size: 1.1em;
-  }
-
-  .indent {
-    padding-left: 15px;
-  }
-}
-
-/* Add a medium breakpoint for tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  #photo-group {
-    grid-template-columns: repeat(2, 1fr);
-  }
+float-parent::after {
+  content: "";
+  display: table;
+  clear: both;
 }

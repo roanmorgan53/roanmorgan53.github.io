@@ -1,165 +1,69 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A portfolio website all about Roan Morgan" />
-  <title>Roan Morgan's Portfolio</title>
-  <link rel="icon" type="image/png" href="images/WindowsIcon.png" alt="windows command prompt photo">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <!--Link to Noto Serif-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <title>Roan Morgan</title>
 </head>
 
 <body>
-  <div id="header">
-    <h1 class="main-title">Roan Morgan</h1>
-    <p class="main-title">
-      <strong><em>Computer Science Student</em></strong>
-    </p>
-    <h4>
-      <a class="nostyle" href="mailto:roanmorgan04@gmail.com">roanmorgan04@gmail.com</a>
-    </h4>
+  <div class="about">
+    <h1 class="split">Roan L. Morgan <span>Computer Science Student</span></h1>
   </div>
 
-  <hr />
-  <div id="content">
-    <h2><span class="section-title">Biography</span></h2>
-    <div id="bio">
-      <img id="roanPhoto" class="inline" src="images/roan.jpg" alt="Roan Morgan" />
-      <p>
-        Since a very young age, I have always been
-        interested in all things technology. Even more importantly, how
-        technology influences our world. I first began on this tech focused
-        journey in middle school. I had taken a class there called "Exploring
-        Technology". This class consisted of basic html/css, arduino, and lego
-        robotics. This sparked an ever-growing curiosity about tech that
-        hasn't left me since. I have continued to pursue and build on my
-        interests in higher education. I hope to enter the field of tech and
-        work on a project that will influence the physical world around us.
-      </p>
-    </div>
-
-    <div id="education" class="inline">
-      <h2><span class="section-title">Education</span></h2>
-      <div class="utk">
-        <h4>University of Tennessee Knoxville <span><em>/ 3.76 GPA / B.S. in Computer Science /  Graduation: 2026</em></span></h4>
-        <p class="lightdark">Advanced Data Structures and Algorithms</p>
-        <p>Software Engineering <span><em>In progress</em></span></p>
-        <p class="lightdark">Intro to Cybersecurity <span><em>In progress</em></span></p>
-        <p>Systems Programming <span><em>In progress</em></span></p>
-        <p class="lightdark">Probability and Random Variables<span><em>In progress</em></span></p>
-        <p>Algorithm Analysis and Automata <span><em>In progress</em></span></p>
-      </div>
-      <div class="cos">
-        <h4>
-          College of the Sequoias
-          <em>/ 3.70 GPA / A.S.-T Computer Science / 2024</em>
-        </h4>
-        <p class = "lightdark">  Computer Science<span>Programming, Architecture, Discrete Math, C++</span></p>
-
-        <p>
-          Giant Astronomy Students<span>Secretary</span>
-        </p>
-        <p class="lightdark">MESA Program<span>Member</span></p>
-        <p>Friday Night Lab<span>Member</span></p>
-        <p class="lightdark">Chess Club<span>Member</span></p>
+  <marquee>ⓘ Information Booth </marquee>
+  <div class="float-parent">
+    <div class="float-child-left">
+      <div class="sidebar">
+        this thing on?
       </div>
     </div>
 
-    <div id="experiences">
-      <div class="upr">
-        <h2><span class="section-title">Experiences</span></h2>
-        <h4>University of Puerto Rico, Rίo Piedras</h4>
-        <p class="lightdark">
-          IQ-BIO REU <span>Undergraduate Researcher</span>
-        </p>
-        <p>
-        <div class="indent">
-          Worked with automatic bee behavior detection utilizing machine learning, computer vision, and web application
-          tools. I also learned about the machine learning pipeline, full-stack development of a web application, and
-          the presentation of scientific research.
-          </p>
+    <div class="float-child-right">
+      <div id="info-wrapper">
+
+
+        <div class="skills">
+          <h1>Tools and Languages</h1>
+          <ul>C/C++</ul>
+          <ul>C#</ul>
+          <ul class="split">Python <span>Data Wrangling and Analysis</span></ul>
         </div>
 
-        <div id="photo-group">
-          <img src="./images/pr1.jpg">
-          <img src="./images/pr2.jpeg">
-          <img src="./images/pr3.jpg">
-          <img src="./images/Animation.gif">
-          <img src="./images/Unlabeled_Bees.gif">
-          <img src="./images/edge_setup.JPG">
+        <div class="education">
+          <h1>Education</h1>
+          <h2 class="split">University of Tennessee - Knoxville <span>GPA: 3.76</span></h2>
+          <ul>Advanced Algorithms</ul>
+          <ul>Cybersecurity</ul>
+          <ul>Software Engineering</ul>
+          <ul>Systems Programming</ul>
+          <h2 class="split">College of the Sequoias <span>Visalia, CA / GPA: 3.70</span></h2>
+          <ul class="split">Programming Fundamentals <span>C++</span></ul>
+          <ul>Calculus</ul>
+          <ul>Physics</ul>
+          <ul>
+            <h3>Awards</h3>
+          </ul>
+          <ul>Associates Degree in Computer Science, Mathematics, and Physics</ul>
+          <ul class="split">President's List <span>3 Semesters</span></ul>
+
         </div>
+
+      </div>
     </div>
+  </div>
 
 
 
-      </div>
 
-      <div id="skills">
-        <h2><span class="section-title">Skills</span></h2>
-        <p class="lightdark">C++</p>
-        <div class="indent">
-          <p>
 
-            C++ is the OOP language that I am the most familar with as my former community college and current university use it in order to teach their students about programming. 
-
-          </p>
-        </div>
-        <p class="lightdark">Web Development</p>
-        
-          <div class="indent">
-            <p>
-              I am versed in the fundamentals of web design and how HTML and CSS work together to make an aesthetically pleasing UI. 
-              I am also diving into React and Typescript in order to learn how websites are made in the workforce.
-            </p>
-          </div>
-        <p class="lightdark">Python</p>
-        <div class="indent">
-          <p>
-            My internship as a NSF REU Undergraduate Researcher included programming in python for data wrangling in
-            order to evaluate machine learning models based on their precision, f1, and recall. 
-            I also worked on the full-stack development of UX features for the web app in Python Flask.
-          </p>
-        </div>
-
-        <p class="lightdark">Linux / Unix</p>
-
-        <div class="indent">
-          <p>
-            I have been daily driving an ubuntu system since June 2024, 
-            and have been incrementally learning all the fundamentals of utilizing unix in order to run programs 
-          </p>
-        </div>
-
-      <div id="awards">
-        <h2><span class="section-title">Awards</span></h2>
-        <p class="lightdark">
-          College of the Sequoias President's List<span>3 Semesters</span>
-        </p>
-        <p>College of the Sequoias Dean's List<span>1 Semester</span></p>
-        <p class="lightdark">
-          California Scholarship Federation Lifetime Member<span></span>
-        </p>
-        <p>California State Seal of Biliteracy<span>Spanish</span></p>
-      </div>
-
-      <div id="footer">
-        <p>
-          <a href="https://www.linkedin.com/in/roan-morgan-b78582225/" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/roanmorgan53" target="_blank">
-            <img src="images/github.png" alt="GitHub" />
-            <!--thanks Dave Gandy for the Github Icon ;)-->
-          </a>
-        </p>
-      </div>
 </body>
 
 </html>
