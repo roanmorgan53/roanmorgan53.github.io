@@ -119,6 +119,8 @@ hr {
   font-family: "Noto Serif", sans-serif;
   letter-spacing: 2px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
 #photo-group {
@@ -252,7 +254,8 @@ span {
   #awards p span,
   #skills p span,
   #projects p span,
-  #experiences p span {
+  #experiences p span,
+  .section-title span {
     display: block;
     padding-left: 15px;
   }
@@ -276,3 +279,25 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* SKILLS SLIDERS */
+.skillContainer {
+  width: 100%;
+  background-color: rgba(46, 42, 49, 0.5);
+
+}
+
+.skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  color: black;
+}
+
+.c {width: 80%; background-color: rgb(234, 231, 231); }
+.cpp {width: 75%; background-color: rgb(234, 231, 231);}
+.html {width: 90%; background-color: rgb(234, 231, 231);}
+.python {width: 60%; background-color: rgb(234, 231, 231);}
+.unix {width: 90%; background-color: rgb(234, 231, 231);}
+.cs {width: 10%; background-color: rgb(234, 231, 231);}
