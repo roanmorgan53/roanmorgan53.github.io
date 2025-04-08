@@ -258,7 +258,6 @@ span {
   #skills p,
   #projects p,
   #experiences p {
-    flex-direction: column;
     gap: 5px;
   }
 
@@ -320,4 +319,8 @@ span {
 
 .upr {
   padding-top: 15px;
+}
+
+.about-me {
+  
 }
