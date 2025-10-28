@@ -1,0 +1,15 @@
+.iconWrapper {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.iconImage {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-radius: 20%;
+}

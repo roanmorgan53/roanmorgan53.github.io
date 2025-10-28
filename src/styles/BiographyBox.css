@@ -1,0 +1,25 @@
+.bioFlex {
+    display: flex;
+    justify-content: start;
+    /* border: 2px solid dodgerblue; */
+    height: 100%;
+    width: 75%;
+    margin: 5px
+}
+
+.bioWrapper {
+    display: inline-block;
+    border: 2px solid black;
+    height: 100%;
+}
+
+.name {
+    margin: 0;
+}
+
+.location {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
