@@ -1,0 +1,22 @@
+.contentBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.contentBoxHeader {
+    background-color: rgba(68, 66, 77, 0.95);
+    width: 100%;
+}
+
+.contentBoxContent {
+    background-color: rgba(48, 47, 53, 0.5);
+    padding: 5px;
+}
+
+.contentBoxTitle {
+    margin: 0;
+    font-weight: 100; 
+    font-size: 25px;
+    padding: 5px
+}

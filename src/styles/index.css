@@ -24,4 +24,9 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url('../assets/gradienthills.png')
+}
+
+p {
+  margin: 0;
 }
