@@ -1,10 +1,14 @@
 .bioFlex {
     display: flex;
     justify-content: start;
-    /* border: 2px solid dodgerblue; */
-    height: 100%;
     width: 75%;
     margin: 5px
+}
+
+@media (max-width: 768px) {
+    .bioFlex {
+        width: 100%;
+    }
 }
 
 .bioWrapper {

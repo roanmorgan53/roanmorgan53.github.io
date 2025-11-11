@@ -1,0 +1,21 @@
+.statBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.statValue {
+    font-size: 48px; /* Large white text */
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.statLabel {
+    font-size: 14px; /* Smaller grey text */
+    color: #8f98a0; /* Steam's grey text color */
+    margin: 0;
+}

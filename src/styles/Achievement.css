@@ -1,0 +1,46 @@
+.achievementWrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    /* overflow: visible; */ /* Ensure tooltip can render outside */
+}
+
+.achievementImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.achievementInfo {
+    position: absolute;
+    bottom: calc(100% + 5px); /* Position above the image with a 5px gap */
+    left: 0; /* Align left edge with image */
+    width: 200px; /* Make it wider */
+    background-color: white; /* Inverted background */
+    color: black; /* Inverted text color */
+    padding: 5px;
+    z-index: 10; /* Ensure it appears above other content */
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Prevent interaction when hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.achievementWrapper:hover .achievementInfo {
+    opacity: 1; /* Show on hover */
+    pointer-events: auto; /* Allow interaction on hover */
+}
+
+.achievementWrapper:hover .achievementImage {
+    /* No hover effects */
+}
+
+.achievementTitle {
+    margin: 0;
+    font-size: 16px;
+}
+
+.achievementDescription {
+    margin-top: 5px;
+    font-size: 12px;
+}

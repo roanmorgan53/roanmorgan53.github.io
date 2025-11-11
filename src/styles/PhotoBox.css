@@ -3,16 +3,29 @@
     height: 200px;
 }
 
+@media (max-width: 768px) {
+    .profilePic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profileSubheader {
+        font-size: 6px;
+    }
+}
+
 .profileSubheader {
     padding:5px;
     margin:0;
     font-weight: 500;
     font-size: small;
     position: absolute;
-    top: calc(200px - 1lh)
+    bottom: 0;
+    left: 0;
 }
 
 .wrapper {
     display: inline-block;
     border: 5px solid black;
+    position: relative;
 }

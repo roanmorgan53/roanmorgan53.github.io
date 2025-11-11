@@ -24,7 +24,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('../assets/gradienthills.png')
+  background-image: url('../assets/gradienthills.png');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {

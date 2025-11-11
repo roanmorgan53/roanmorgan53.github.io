@@ -6,7 +6,11 @@ import PhotoIcon from "./components/PhotoIcon.tsx";
 import polyLogo from "./assets/cal-poly-logo.png";
 import utLogo from "./assets/uticon.jpg";
 import cosLogo from "./assets/cos.png";
+import nsfLogo from "./assets/nsf.png";
+import caritasLogo from "./assets/caritas.png";
 import ContentBox from "./components/ContentBox.tsx";
+import Achievement from "./components/Achievement.tsx";
+import StatBox from "./components/StatBox.tsx";
 
 function App() {
   return (
@@ -15,21 +19,43 @@ function App() {
         <div className="introWrapper">
           <PhotoBox img={roanImgUrl} />
           <BiographyBox>
-            <div className="universityIconsWrapper">
-              <PhotoIcon url={polyLogo} alt="Cal Poly Logo" />
-              <PhotoIcon url={utLogo} alt="University of Tennessee Logo" />
-              <PhotoIcon url={cosLogo} alt="College of the Sequoias Logo" />
-            </div>
+            <></>
           </BiographyBox>
         </div>
         <div className="contentItem">
           <ContentBox title="Achievement Showcase">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
-              molestias labore sint a dolorum et doloremque praesentium id
-              dignissimos similique aliquid, inventore quisquam placeat. Ad,
-              pariatur cum? Optio, quos harum!
-            </p>
+            <div className="achievementImages">
+              <Achievement
+                image={polyLogo}
+                title="Cal Poly"
+                description="B.S. in Computer Science. 2026"
+              />
+              <Achievement
+                image={utLogo}
+                title="University of Tennessee"
+                description="Attended for a year."
+              />
+              <Achievement
+                image={cosLogo}
+                title="College of the Sequoias"
+                description="Attended for two years. Associate Degrees in Computer Science, Math, and Physics"
+              />
+              <Achievement
+                image={nsfLogo}
+                title="NSF REU"
+                description="Completed an NSF REU in San Juan, Puerto Rico. Worked with a computer vision bee detection system!"
+              />
+              <Achievement
+                image={caritasLogo}
+                title="Cáritas Valencia"
+                description="For my Cal Poly capstone project, I am a Mobile Software Engineer developing an app for the technicians of Cáritas Valencia to streamline operations."
+              />
+            </div>
+            <div className="statBoxContainer">
+              <StatBox value="1412" label="Bees Labeled" />
+              <StatBox value="0" label="Days Since I Forgot a Semicolon;" />
+              <StatBox value="Too Long" label="Since I've Seen My Dog" />
+            </div>
           </ContentBox>
         </div>
         <div className="contentItem">
