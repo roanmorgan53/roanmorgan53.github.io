@@ -1,0 +1,43 @@
+.bioFlex {
+    display: flex;
+    justify-content: start;
+    width: 75%;
+    margin: 5px
+}
+
+@media (max-width: 768px) {
+    .bioFlex {
+        width: 100%;
+    }
+}
+
+.bioWrapper {
+    display: inline-block;
+    height: 100%;
+}
+
+.name {
+    margin: 0;
+}
+
+.major {
+    margin-right: 5px;
+}
+
+.majorLocWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('../assets/slo.JPG');
+    background-size: cover;
+    box-shadow: inset 0 0 10px rgb(1, 4, 20);; 
+    padding: 10px;
+    text-shadow: rgb(1,4,20) 0 0 10px;
+}
+

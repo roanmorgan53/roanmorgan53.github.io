@@ -1,0 +1,515 @@
+﻿:root {
+  --page-bg: #0f141b;
+  --steam-deep: #101822;
+  --steam-panel: #16202d;
+  --steam-panel-2: #1b2a3a;
+  --steam-line: #2e4a67;
+  --steam-line-soft: #23384e;
+  --steam-header: #273f5a;
+  --steam-header-2: #1d3046;
+  --text-main: #d8e6f5;
+  --text-soft: #8fa6bf;
+  --link: #67c1f5;
+  --online: #66c0f4;
+  --chip-bg: #203246;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 12% 12%, rgba(35, 76, 125, 0.24), transparent 35%),
+    radial-gradient(circle at 88% 18%, rgba(24, 56, 95, 0.28), transparent 38%),
+    linear-gradient(180deg, #0c1118 0%, #0f151d 42%, #10171f 100%);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.pageFrame {
+  width: min(1160px, 100% - 1rem);
+  margin: 0.8rem auto 2rem;
+}
+
+.steamPanel {
+  background: linear-gradient(180deg, rgba(25, 39, 55, 0.97), rgba(16, 25, 35, 0.98));
+  border: 1px solid var(--steam-line-soft);
+  box-shadow: var(--shadow);
+}
+
+.siteHeader {
+  border-radius: 4px;
+  padding: 0.85rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.9rem;
+}
+
+.profileHero {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.profileHeroImage {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border: 2px solid #4f6b89;
+  background: #0f151f;
+  box-shadow: 0 0 0 3px #1a2b3d;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  color: var(--text-soft);
+  margin-bottom: 0.22rem;
+}
+
+.siteHeader h1 {
+  font-size: clamp(1.45rem, 3.5vw, 2.1rem);
+  font-weight: 500;
+}
+
+.subhead {
+  margin-top: 0.24rem;
+  color: #c7d5e0;
+}
+
+.subheadMuted,
+.mutedLine {
+  margin-top: 0.2rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.levelBadge {
+  border: 1px solid #385472;
+  background: linear-gradient(180deg, #19283a, #132131);
+  border-radius: 3px;
+  padding: 0.55rem 0.7rem;
+  width: fit-content;
+}
+
+.levelLabel {
+  color: var(--text-soft);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.levelValue {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.levelHint {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+}
+
+.siteNav {
+  margin: 0.65rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  background: linear-gradient(90deg, #17293b, #1b3148);
+  border: 1px solid #2a4763;
+}
+
+.siteNavLink {
+  color: #c7d5e0;
+  white-space: nowrap;
+  text-decoration: none;
+  border-right: 1px solid #27445f;
+  padding: 0.55rem 0.86rem;
+  transition: background-color 160ms ease;
+}
+
+.siteNavLink:hover {
+  background: rgba(103, 193, 245, 0.16);
+  text-decoration: none;
+}
+
+.siteNavLinkActive {
+  background: rgba(103, 193, 245, 0.22);
+  color: #ffffff;
+}
+
+.pageGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.pageContent {
+  min-width: 0;
+}
+
+.routeFade {
+  animation: routeFadeIn 190ms ease-out;
+}
+
+@keyframes routeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.card {
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--steam-line-soft);
+  background: linear-gradient(180deg, #182533, #111a25);
+}
+
+.card > h2,
+.card > h3 {
+  font-weight: 500;
+  font-size: 1.08rem;
+  padding: 0.52rem 0.72rem;
+  border-bottom: 1px solid #2a3f56;
+  background: linear-gradient(90deg, var(--steam-header), var(--steam-header-2));
+}
+
+.card > p,
+.card > .metricGrid,
+.card > .chipList,
+.card > .listCard,
+.card > .inlineCta,
+.card > .bulletList,
+.card > .photoGrid,
+.card > .linkRow {
+  margin-left: 0.72rem;
+  margin-right: 0.72rem;
+}
+
+.card > p,
+.listCard p,
+.card > .bulletList,
+.card > .chipList,
+.card > .photoGrid,
+.card > .linkRow {
+  margin-top: 0.62rem;
+}
+
+.card > .inlineCta {
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.7rem;
+  color: #9cd9ff;
+}
+
+.listCard {
+  padding-bottom: 0.6rem;
+}
+
+.listCard h4 {
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+
+.listCard + .listCard {
+  border-top: 1px solid #26384b;
+  padding-top: 0.55rem;
+}
+
+.metricGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.metricCard {
+  border: 1px solid #2b445e;
+  background: linear-gradient(180deg, #1a2c3e, #142536);
+  padding: 0.55rem 0.65rem;
+}
+
+.metricValue {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.05;
+}
+
+.metricLabel {
+  margin-top: 0.2rem;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.chipList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+}
+
+.chip {
+  border: 1px solid #375473;
+  background: var(--chip-bg);
+  border-radius: 2px;
+  padding: 0.2rem 0.46rem;
+  font-size: 0.86rem;
+  color: #c7d5e0;
+}
+
+.bulletList {
+  margin-bottom: 0.72rem;
+  padding-left: 1.1rem;
+}
+
+.bulletList li + li {
+  margin-top: 0.38rem;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.72rem;
+}
+
+.photoGrid img {
+  width: 100%;
+  border: 1px solid #355270;
+  border-radius: 2px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.aboutCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.aboutPhoto {
+  width: calc(100% - 1.44rem);
+  margin: 0.72rem;
+  max-height: 360px;
+  object-fit: cover;
+  border: 1px solid #355270;
+}
+
+.aboutCard > div {
+  padding: 0.72rem 0.72rem 0.8rem;
+}
+
+.aboutCard > div p + p {
+  margin-top: 0.55rem;
+}
+
+.linkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  padding-bottom: 0.72rem;
+}
+
+.rightRail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+
+.railSection {
+  border-radius: 3px;
+  padding: 0.62rem;
+}
+
+.railTitle {
+  font-size: 1.03rem;
+  font-weight: 500;
+  color: var(--online);
+  margin-bottom: 0.52rem;
+}
+
+.statusLine {
+  color: #b7dfff;
+  margin-bottom: 0.55rem;
+}
+
+.railFacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #c7d5e0;
+}
+
+.railFacts li + li {
+  margin-top: 0.42rem;
+}
+
+.railChips {
+  margin-top: 0;
+}
+
+.contactLine {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 899px) {
+  .pageFrame {
+    width: calc(100% - 0.6rem);
+    margin-top: 0.4rem;
+  }
+
+  .siteHeader {
+    padding: 0.65rem;
+    gap: 0.65rem;
+  }
+
+  .profileHero {
+    align-items: flex-start;
+  }
+
+  .profileHeroImage {
+    width: 76px;
+    height: 76px;
+  }
+
+  .siteHeader h1 {
+    font-size: 1.45rem;
+  }
+
+  .subhead,
+  .subheadMuted {
+    font-size: 0.93rem;
+  }
+
+  .levelBadge {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.45rem 0.55rem;
+  }
+
+  .levelLabel,
+  .levelHint {
+    margin: 0;
+  }
+
+  .levelValue {
+    margin-left: auto;
+    font-size: 1rem;
+  }
+
+  .siteNav {
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: visible;
+  }
+
+  .siteNavLink {
+    border-right: 1px solid #27445f;
+    border-bottom: 1px solid #27445f;
+    text-align: center;
+    padding: 0.52rem 0.35rem;
+    font-size: 0.9rem;
+  }
+
+  .card > h2,
+  .card > h3 {
+    font-size: 1rem;
+    padding: 0.46rem 0.6rem;
+  }
+
+  .card > p,
+  .card > .metricGrid,
+  .card > .chipList,
+  .card > .listCard,
+  .card > .inlineCta,
+  .card > .bulletList,
+  .card > .photoGrid,
+  .card > .linkRow {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+
+  .metricValue {
+    font-size: 1.35rem;
+  }
+
+  .photoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .railSection {
+    padding: 0.55rem;
+  }
+
+  .rightRail {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .siteHeader {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .pageGrid {
+    grid-template-columns: minmax(0, 3fr) minmax(250px, 1fr);
+    align-items: start;
+  }
+
+  .rightRail {
+    position: sticky;
+    top: 0.8rem;
+  }
+
+  .metricGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .aboutCard {
+    grid-template-columns: 320px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .aboutPhoto {
+    width: calc(100% - 0.72rem);
+    margin-right: 0;
+  }
+}
