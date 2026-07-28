@@ -6,12 +6,17 @@ export default function AboutPage() {
     <section className="stack">
       <h2>About</h2>
       <article className="card aboutCard">
-        <img src={aboutPhoto} alt="Roan outdoors" className="aboutPhoto" loading="lazy" />
+        <img
+          src={aboutPhoto}
+          alt="Roan outdoors"
+          className="aboutPhoto"
+          loading="lazy"
+        />
         <div>
           <p>{siteData.aboutMessage}</p>
           <p>
-            I care about building software that is reliable, practical, and useful in
-            day-to-day life, and I enjoy teams that move quickly while keeping quality high.
+            I am a strong believer that if something is going to be done, it
+            should be done right.
           </p>
         </div>
       </article>

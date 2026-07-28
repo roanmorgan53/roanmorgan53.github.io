@@ -15,6 +15,7 @@ export type ProjectItem = {
   timeframe: string;
   summary: string;
   technologies: string[];
+  imageUrls?: string[];
   links: { label: string; url: string }[];
 };
 
@@ -28,17 +29,17 @@ export type EducationItem = {
 
 export const siteData = {
   name: "Roan Morgan",
-  headline: "Senior Computer Science Student and Software Engineer",
-  location: "San Luis Obispo, California",
+  headline: "Software Engineer",
+  location: "Tulare County, California",
   email: "roanmorgan04@gmail.com",
   github: "https://github.com/roanmorgan53",
-  linkedin: "https://www.linkedin.com/in/roan-morgan-b78582225/",
+  linkedin: "https://www.linkedin.com/in/roanmorgan53/",
   graduation: "June 2026",
   gpa: "3.72 / 4.0",
   aboutMessage:
-    "Hi, I'm Roan. I'm a computer scientist from California's Central Valley. Throughout my time learning computer science, I am most interested in the interaction computers can have with the world around us. When I'm not coding I enjoy the outdoors, and lifting weights.",
+    "Hi, I'm Roan. I'm a computer scientist from California's Central Valley. One of my main interests is the interaction computers can have with the world around us. When I'm not coding I enjoy the outdoors, and lifting weights.",
   quickIntro:
-    "I build practical software systems across mobile, web, and computer vision, with a focus on clean execution and real-world impact.",
+    "I build practical software systems across mobile, web, and computer vision, with a focus on clean execution and product quality.",
   coreSkills: [
     "TypeScript",
     "React Native",
@@ -58,18 +59,25 @@ export const siteData = {
       title: "Caritas Valencia Mobile Application",
       organization: "Cal Poly Senior Project",
       location: "San Luis Obispo, CA",
-      timeframe: "Oct 2025 - Present",
+      timeframe: "October 2025 - June 2026",
       role: "Full-stack Software Engineer",
       summary:
-        "Developing an iOS and Android mobile application for an international nonprofit's technician workflow and case management.",
+        "Developed an iOS and Android mobile application for an international nonprofit's technician workflow and case management.",
       highlights: [
-        "Leading development of a React Native application supporting 100+ participant case records.",
-        "Built an automated testing workflow with Jest and GitHub Actions for stable releases.",
-        "Implementing role-based access and GDPR-conscious authentication patterns.",
-        "Building and integrating an Express.js and MongoDB backend API for scalable data management.",
-        "Collaborating directly with stakeholders in an Agile workflow.",
+        "Led development of iOS and Android mobile app using React Native for Spanish nonprofit serving 200+ participant case records",
+        "Automated testing workflow using GitHub Actions and Jest, ensuring quality production code",
+        "Configured CI/CD to include a code style check using Prettier, enforcing code styling consistency",
+        "Worked with international client in an Agile environment, effectively maintaining contact with project stakeholders throughout product development",
+        "Integrated interactive map supporting participant location organization"
+
       ],
       technologies: ["React Native", "Express.js", "MongoDB", "Jest", "GitHub Actions", "Agile"],
+      imageUrls: [
+        "/images/caritas/caritas_map.png",
+        "/images/caritas/caritas_addpin.png",
+        "/images/caritas/caritas_filter.png",
+        "/images/caritas/caritas_movepin.png",
+      ]
     },
     {
       title: "NSF Undergraduate Research",
@@ -89,28 +97,30 @@ export const siteData = {
       technologies: ["Python", "YOLOv8", "CVAT", "NVIDIA Jetson Orin", "DeepStream", "Flask"],
       imageUrls: [
         "/images/nsf/pr1.jpg",
-        "/images/nsf/pr2.jpeg",
         "/images/nsf/pr3.jpg",
-        "/images/nsf/edge_setup.JPG",
       ],
     },
   ] as ExperienceItem[],
   projects: [
     {
-      title: "LLM Emoji Trivia Web App",
-      timeframe: "Jan 2025 - May 2025",
-      summary:
-        "Built an interactive emoji charades game with local LLM-powered hints and answer validation for fully local gameplay.",
-      technologies: ["Next.js", "TypeScript", "tRPC", "Prisma", "Tailwind CSS", "LMStudio", "Gemini 2 2B"],
-      links: [],
+      title: "Distributed ATC Alert System",
+      timeframe: "May 2026",
+      summary: "ATC Alert System with Task Queue from Realtime ADSB data",
+      technologies: ["Apache Kafka", "Golang", "KRaft"],
+      links: [
+        {label: "Repo", url: "https://github.com/camdnn/distributed-kafka-taskflow"},
+        {label: "Presentation", url: "https://docs.google.com/presentation/d/1z2e08VMjZ0XtHdAznagiowWE1_vRbGyEVbaxNORmT2I/edit?usp=sharing"}
+      ]
     },
     {
-      title: "Bee Detection Web App",
-      timeframe: "Jun 2024 - Aug 2024",
-      summary:
-        "Improved a Flask application used to track bee behavior experiments and added multiprocessing support for experiment management.",
-      technologies: ["Python", "Flask", "Computer Vision", "Multiprocessing"],
-      links: [],
+      title: "Genetic Mario",
+      timeframe: "May 2026",
+      summary: "Mario teaches himself how to play 1-1 using a genetic algorithm.",
+      technologies: ["PyTorch", "Neural Network", "Genetic Algorithm"],
+      links: [
+        {label: "Repo", url: "https://github.com/roanmorgan53/Genetic_Mario"},
+        {label: "Presentation", url: "https://docs.google.com/presentation/d/1Z_3riAhZNqiBXvm0aQV9p1BpNzlXvL2pN_srHSMdecw/edit?usp=sharing"}
+      ]
     },
     {
       title: "LLEAP Exoskeleton Contributions",
@@ -120,7 +130,6 @@ export const siteData = {
       technologies: ["Python", "C++", "ROS2", "Embedded Systems"],
       links: [
         { label: "LLEAP", url: "https://github.com/Project-LLEAP/LLEAP" },
-        { label: "Encoder", url: "https://github.com/Project-LLEAP/encoder" },
       ],
     },
   ] as ProjectItem[],
@@ -131,8 +140,8 @@ export const siteData = {
       location: "San Luis Obispo, CA",
       timeframe: "Expected June 2026",
       details: [
-        "GPA: 3.72 / 4.0",
-        "Relevant Coursework: Systems Programming, Data Structures and Algorithms, Cybersecurity, Software Engineering, Database Systems, Computer Networks",
+        "GPA: 3.59 / 4.0",
+        "Relevant Coursework: Systems Programming, Data Structures and Algorithms, Cybersecurity, Software Engineering, Database Systems, Computer Networks, Operating Systems",
       ],
     },
     {

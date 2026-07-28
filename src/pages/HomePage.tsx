@@ -5,27 +5,21 @@ export default function HomePage() {
   return (
     <section className="stack">
       <div className="card heroCard">
-        <h2>At a Glance</h2>
+        <h2>Bio</h2>
         <p>{siteData.quickIntro}</p>
         <ul className="bulletList">
-          <li>Building production-style mobile and web systems for real stakeholders.</li>
-          <li>Focused on dependable software delivery, testing, and clean interfaces.</li>
-          <li>Interested in computer vision and real-world computer interaction.</li>
+          <li>
+            Building production-style mobile and web systems for real
+            stakeholders.
+          </li>
+          <li>
+            Focused on dependable software delivery, testing, and clean
+            interfaces.
+          </li>
+          <li>
+            Interested in computer vision and real-world computer interaction.
+          </li>
         </ul>
-        <div className="metricGrid" style={{ marginBottom: "0.72rem" }}>
-          <article className="metricCard">
-            <p className="metricValue">{siteData.graduation}</p>
-            <p className="metricLabel">Expected Graduation</p>
-          </article>
-          <article className="metricCard">
-            <p className="metricValue">{siteData.gpa}</p>
-            <p className="metricLabel">Current GPA</p>
-          </article>
-          <article className="metricCard">
-            <p className="metricValue">2+</p>
-            <p className="metricLabel">Production-Style Roles</p>
-          </article>
-        </div>
       </div>
 
       <div className="card">

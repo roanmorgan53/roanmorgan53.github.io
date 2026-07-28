@@ -12,7 +12,11 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
     <div className="pageFrame">
       <header className="siteHeader steamPanel">
         <div className="profileHero">
-          <img className="profileHeroImage" src={profileAvatar} alt={`${siteData.name} avatar`} />
+          <img
+            className="profileHeroImage"
+            src={profileAvatar}
+            alt={`${siteData.name} avatar`}
+          />
           <div>
             <p className="eyebrow">Software Engineer Profile</p>
             <h1>{siteData.name}</h1>
@@ -22,8 +26,8 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         </div>
         <div className="levelBadge">
           <p className="levelLabel">Level</p>
-          <p className="levelValue">Senior</p>
-          <p className="levelHint">Graduating {siteData.graduation}</p>
+          <p className="levelValue">Free-agent</p>
+          <p className="levelHint">Looking for work!</p>
         </div>
       </header>
 
@@ -35,11 +39,13 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         <aside className="rightRail">
           <section className="steamPanel railSection">
             <h2 className="railTitle">Recruiter Snapshot</h2>
-            <p className="statusLine">Currently Open to SWE roles</p>
+            <p className="statusLine">Open to SWE roles</p>
             <ul className="railFacts">
-              <li>GPA: {siteData.gpa}</li>
-              <li>B.S. Computer Science, {siteData.graduation}</li>
-              <li>Mobile + Full-stack + Computer Vision</li>
+              <li>Bachelor of Science, Computer Science</li>
+              <li>
+                Mobile/Web, Backend Systems, Distributed Computing, Computer
+                Vision
+              </li>
             </ul>
           </section>
 
